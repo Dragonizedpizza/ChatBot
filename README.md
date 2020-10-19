@@ -13,6 +13,6 @@ A ChatBot for discord, made using [ChatCord](https://www.npmjs.com/package/chatc
 ## Self Hosting ##
 1) This bot is easy to self host. I recommend you to not use heroku or glitch. Instead you can use [DanBot Hosting](https://discord.gg/j5EnRwT) to host your bots. Danbot hosting allows you to host game servers and Discord Bots. Make sure to check it out.
 
-<footer>
+
 If you have any problems or errors while trying to run the bot. You can DM me on Discord: FC#5570.
-</footer>
+
