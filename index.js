@@ -4,7 +4,7 @@ const client = new Discord.Client();
 
 const chatcord = require("chatcord");
 
-const token = "NzY2MjA4MTUxMDcwNDQxNDcy.X4gA8g.lH40R8-d4fv_-PGXdNE8v3_g-R4";
+const token = "YOUR_BOT_TOKEN";
 
 
 let ai = new chatcord.Client();
