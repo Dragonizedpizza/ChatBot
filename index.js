@@ -28,7 +28,9 @@ const msg = await message.channel.send("Pinging...").then(msg => { msg.edit(`⌛
 return;
 
 }
-    ai.chat(content).then(r => message.channel.send(r)); 
+    message.channel.startTyping()
+    await ai.chat(content).then(r => message.channel.send(r)); 
+    message.channel.stopTyping()
     }})
 
 
