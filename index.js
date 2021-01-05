@@ -1,11 +1,7 @@
 const Discord = require("discord.js");
-
 const client = new Discord.Client();
-
 const chatcord = require("chatcord");
-
-const token = "YOUR_BOT_TOKEN";
-
+const config = require('./config.json');
 
 let ai = new chatcord.Client();
 
@@ -19,7 +15,7 @@ client.on('message', async message => {
 
     if (message.author.bot) return;
 
-if(message.channel.name.includes('chat')) {
+if(message.channel.id !== config.chatID) {
     let content = message.content     
 
 if(content === 'ping') {
@@ -35,6 +31,6 @@ return;
 
 
 
-client.login(token);
+client.login(config.token);
 
  
