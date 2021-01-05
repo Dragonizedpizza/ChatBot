@@ -1,0 +1,4 @@
+{
+ "token": "your bot token",
+ "chatID": "the channel id you want your bot to be a chatbot in"
+}
