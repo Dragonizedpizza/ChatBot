@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const client = new Discord.Client();
+const client = message.client;
 const chatcord = require("chatcord");
 const config = require('./config.json');
 
@@ -17,8 +17,7 @@ client.on('message', async message => {
 
 if(message.channel.id !== config.chatID) {
     let content = message.content     
-
-if(content === 'ping') {
+if(content.startsWith === 'ping') {
 
 const msg = await message.channel.send("Pinging...").then(msg => { msg.edit(`⌛ Latency is ${msg.createdTimestamp - message.createdTimestamp}ms\n⏲️ API Ping is ${(client.ws.ping)}`)})
 return;
