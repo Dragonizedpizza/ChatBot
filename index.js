@@ -18,7 +18,7 @@ client.on('message', async message => {
 
 if(message.channel.id !== config.chatID) {
     let content = message.content     
-if(content.startsWith === 'ping') {
+if(content.startsWith === prefix + 'ping') {
 
 const msg = await message.channel.send("Pinging...").then(msg => { msg.edit(`⌛ Latency is ${msg.createdTimestamp - message.createdTimestamp}ms\n⏲️ API Ping is ${(client.ws.ping)}`)})
 return;
