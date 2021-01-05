@@ -1,11 +1,8 @@
 const Discord = require("discord.js");
-
-const client = new Discord.Client();
-
+const client = message.client;
 const chatcord = require("chatcord");
-
-const token = "YOUR_BOT_TOKEN";
-
+const config = require('./config.json');
+const prefix require('./config.json');
 
 let ai = new chatcord.Client();
 
@@ -19,10 +16,9 @@ client.on('message', async message => {
 
     if (message.author.bot) return;
 
-if(message.channel.name.includes('chat')) {
+if(message.channel.id !== config.chatID) {
     let content = message.content     
-
-if(content === 'ping') {
+if(content.startsWith === prefix + 'ping') {
 
 const msg = await message.channel.send("Pinging...").then(msg => { msg.edit(`⌛ Latency is ${msg.createdTimestamp - message.createdTimestamp}ms\n⏲️ API Ping is ${(client.ws.ping)}`)})
 return;
@@ -35,6 +31,6 @@ return;
 
 
 
-client.login(token);
+client.login(config.token);
 
  
