@@ -16,7 +16,7 @@ client.on('message', async message => {
 
     if (message.author.bot) return;
 
-if(message.channel.id !== config.chatID) {
+if(message.channel.id === config.chatID) {
     let content = message.content     
 if(content.startsWith === prefix + 'ping') {
 
