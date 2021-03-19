@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
-const client = message.client;
+const client = new Discord.Client();
 const chatcord = require("chatcord");
 const config = require('./config.json');
-const prefix require('./config.json');
+const prefix = require('./config.json');
 
 let ai = new chatcord.Client();
 
