@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
-const client = message.client;
+const client = new (require('discord.js').Client();
 const chatcord = require("chatcord");
 const config = require('./config.json');
-const prefix = require('./config.json');
+const { prefix } = require('./config.json');
 
 let ai = new chatcord.Client();
 
@@ -16,7 +16,7 @@ client.on('message', async message => {
 
     if (message.author.bot) return;
 
-if(message.channel.id === config.chatID) {
+if(config.chatID.includes(message.channel.id)) {
     let content = message.content     
 if(content.startsWith === prefix + 'ping') {
 
