@@ -1,5 +1,5 @@
 {
  "token": "your bot token",
- "chatID": ["the array of channel IDs you want the chatbot to work in"],
+ "chatID": ["the array of channel ID(s) you want the chatbot to work in"],
  "prefix": "your bot prefix, only useful for commands like ping."
 }
